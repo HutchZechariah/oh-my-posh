@@ -53,7 +53,7 @@
   "secondary_prompt": {
     "background": "transparent",
     "foreground": "p:black",
-    "template": "<p:yellow,transparent>\ue0b6</><,p:yellow> > </><p:yellow,transparent>\ue0b0</> "
+    "template": "-> "
   },
   "tooltips": [
     {
