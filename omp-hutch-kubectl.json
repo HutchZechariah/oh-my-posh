@@ -34,6 +34,19 @@
           "properties": {
             "display_mode": "files"
           }
+        },
+        {
+          "type": "kubectl",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#000000",
+          "background": "#ebcc34",
+          "template": " ﴱ {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} ",
+          "properties": {
+            "context_aliases": {
+              "arn:aws:eks:eu-west-1:1234567890:cluster/posh": "posh"
+            }
+          }
         }
       ],
       "type": "prompt"
@@ -82,19 +95,6 @@
       ],
       "trailing_diamond": "\ue0b4",
       "type": "az"
-    },
-    {
-      "type": "kubectl",
-      "style": "powerline",
-      "powerline_symbol": "",
-      "foreground": "#000000",
-      "background": "#ebcc34",
-      "template": " ﴱ {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} ",
-      "properties": {
-        "context_aliases": {
-          "arn:aws:eks:eu-west-1:1234567890:cluster/posh": "posh"
-        }
-      }
     }
   ],
   "transient_prompt": {
